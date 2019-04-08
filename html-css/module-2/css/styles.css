@@ -48,6 +48,7 @@ text-align: center;
     display: inline-block;
     width: 430px;
     margin-bottom: 136px;
+    
 }
 
 .post:nth-child(even){
@@ -94,15 +95,17 @@ text-align: center;
 }
 
   button{
+    cursor: pointer;
     background-color: white;
     border: 1px solid rgb(98, 98, 98);
     padding: 22px 34px;
     text-align: center;
-    display: inline-block;
+    display: block;
     font-size: 20px;
     font-weight: 400;
     font-family: 'Playfair Display';
     color: rgb(98, 98, 98);
+    margin: 0 auto;
 }
 
   
