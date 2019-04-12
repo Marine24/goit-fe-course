@@ -1,45 +1,33 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'Open Sans', sans-serif; */
-}
-.site-logo{
-    display: inline-block;
-    vertical-align: middle;
-}
-/*для того, что размер картинки соответствовал размеру ссылки*/
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.site-navigation{
-    /* width: 1030px; */
-    text-align: right;
-    display: inline-block;
-    font-size: 14px;
-    list-style: none;
-    margin: 0 0 0 500px;
-    padding: 0;
-    vertical-align: middle;
 }
 
 .page-header{
-    
-    /* padding: 0; */
-}
-.navigation{
-    padding: 37px 0 110px 0;
     width: 1110px;
-    margin: 0;
-    display: block;
+    margin: 0 auto 70px auto;
+}
+
+.navigation{
+    padding: 36px 0;
+}
+.site-logo{
+    float: left;
+}
+
+.site-navigation {
+    width: 491px;
+    float: right;
+    margin-top: 3px;
 }
 
 .site-navigation li{
-    display: inline-block;
+    list-style: none;
+    float: left;
 }
 
 .site-navigation li:not(:last-child){
@@ -52,10 +40,11 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+    font-size: 14px;
+    
 }
 
 .site-navigation a:hover
-/* .site-navigation a:focus */
 {
     color: rgb(26, 188, 156);
 }
@@ -65,38 +54,59 @@ img{
     margin: 0 auto;
 }
 
+
+
+/* section1 */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
 .feature-title{
     font-weight: 900;
     font-size: 48px;
     color: rgba(81, 81, 81, 255);
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 132px auto;
 }
 
 .feature-title::after{
     display: block;                  
-    width:164px;   
+    width:164px;  
     content: '';                    
     border-bottom: 7px solid rgb(26, 188, 156);
+    padding-top: 32px;
     margin: 0 auto;
 }
 
 .features{
-    margin-bottom: 30px;
+    margin-bottom: 105px;
 }
 
 .feature-list{
     list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
 }
 
+.feature-list-item a{
+    text-decoration: none;
+    
+}
+
+.feature-item:hover .feture-list-title{
+background-color: #1abc9c;
+}
+.feature-item:hover .feature-list-price{
+    background-color: #7fd9c7;
+    }
+
+      
 .feature-list-item{
     width: 255px;
-    display: inline-block;
+    /* height: 322px; */
+    float: left;
     margin-right: 30px;
-    font-size: 0;
+    
 }
 
 .feature-list-item:nth-child(-n+3)
@@ -109,33 +119,38 @@ img{
 }
 
 .feture-list-title{
-    display: inline-block;
-    margin: 0;
+    float: left;
     width: 200px;
     height: 40px;
     background-color:  rgb(50, 50, 50);
-    padding: 0;
+    padding: 10px 30px 10px 12px;
     color: white;
     font-size: 18px;
-}
-.feature-list-price{
-    display: inline-block;
-    margin: 0;
-    width: 55px;
-    height: 40px;
-    background-color: #8c8c8c;
-    /* text-align: center; */
-    font-size: 18px;  
-    background-position: 50% 50%;    
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
-  
+.feature-list-price{
+    float: right;
+    padding: 12px;
+    background-color: #8c8c8c;
+    font-size: 18px;  
+    width: 55px;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+}
+.feture-list-img{
+  float: left;
+}
+
+  /*section2  */
 .posts-title{
     font-weight: 900;
     font-size: 48px;
     color: rgba(81, 81, 81, 255);
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 121px;
 }
 
 .posts-title::after{
@@ -144,21 +159,30 @@ img{
     content: '';                    
     border-bottom: 7px solid rgb(26, 188, 156);
     margin: 0 auto;
+    padding-top: 32px;
 }
-.post{
-    padding: 0;
-    margin: 0 auto;
+.post-title::after{
+    display: block;                  
+    width:136px;   
+    content: '';                    
+    border-bottom: 3px solid rgb(26, 188, 156);
+    padding-top: 16px;
+    margin-bottom: 32px;
+
+}
+
+.post-item img{
+    margin-bottom: 12px;
 }
 
 .post-item{
     width: 350px;
     list-style: none;
     margin-right: 25px;
-    display: inline-block;
+    float: left;
 }
 .post-item:nth-child(3n){
     margin-right: 0;
-
 }
 
 .post-title{
@@ -169,14 +193,15 @@ img{
 }
 
 .post-text{
-    font-weight: 400;
     font-size: 14px;
     font-family: 'OpenSans', sans-serif;
+    line-height: 1.857;
     color: rgb(85, 82, 82);
+    margin-bottom: 18px;
 }
+  
 
 .post-button{
-    
     border-radius: 3px;
     background-color: rgb(78, 198, 171);
     padding: 20px 42px;
@@ -187,3 +212,8 @@ img{
     color: white;
     cursor: pointer;
     }
+
+.posts{
+        padding-bottom: 82px;
+    }
+      
