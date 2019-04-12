@@ -40,19 +40,18 @@ text-align: center;
 
 .posts{
     margin: 0 auto;
-    margin-bottom: 130px;
+    padding-bottom: 130px;
     width: 940px;
 }
 .post{
     font-size: 0;
     display: inline-block;
     width: 430px;
-    margin-bottom: 136px;
-    
+    margin-bottom: 136px;  
 }
 
-.post:nth-child(even){
-    margin-left: 60px;
+.post:nth-child(odd){
+    margin-right: 60px;
 }
 
 .post-image{
