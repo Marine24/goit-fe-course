@@ -41,6 +41,7 @@ body{
     text-transform: uppercase;
     color: black;
     font-size: 14px;
+    display: block;
     
 }
 
@@ -68,7 +69,8 @@ body{
     font-size: 48px;
     color: rgba(81, 81, 81, 255);
     text-align: center;
-    margin: 0 auto 132px auto;
+    margin-bottom: 100px;
+    /* margin: 0 auto 100px auto; */
 }
 
 .feature-title::after{
@@ -93,10 +95,10 @@ body{
     
 }
 
-.feature-item:hover .feture-list-title{
+.feature-list-item:hover .feture-list-title{
 background-color: #1abc9c;
 }
-.feature-item:hover .feature-list-price{
+.feature-list-item:hover .feature-list-price{
     background-color: #7fd9c7;
     }
 
@@ -150,7 +152,7 @@ background-color: #1abc9c;
     font-size: 48px;
     color: rgba(81, 81, 81, 255);
     text-align: center;
-    margin-bottom: 121px;
+    margin-bottom: 115px;
 }
 
 .posts-title::after{
@@ -167,7 +169,6 @@ background-color: #1abc9c;
     content: '';                    
     border-bottom: 3px solid rgb(26, 188, 156);
     padding-top: 16px;
-    margin-bottom: 32px;
 
 }
 
