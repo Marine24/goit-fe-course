@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-header{
+    width: 1114px;
+    margin: 0 auto;
+}
+
+.navigation{
+    padding: 36px 0;
+}
+.site-logo{
+    float: left;
+}
+
+.site-navigation {
+    width: 500px;
+    float: right;
+    margin-top: 3px;
+}
+
+.site-navigation li{
+    list-style: none;
+    float: left;
+}
+
+.site-navigation li:not(:last-child){
+    margin-right: 35px;
+}
+
+.site-navigation a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    
+}
+
+.site-navigation a:hover
+{
+    color: rgb(26, 188, 156);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ .slider{
+     width: 1440px;
+     height: 600px;
+     position: relative;
+ }
+
+ .slider-title{
+    font-weight: 900;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 220px;
+    left: 350px;
+    z-index: 2;  
+}
+.slider-text{
+    position: absolute;
+    top: 320px;
+    left: 350px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 2; 
+    
+}
+
+ .slider-list{
+     list-style: none;  
+ }
+ .overlay{
+     width: 1440px;
+     height: 600px;
+     background-color: rgb(0, 0, 2);
+     opacity: 0.522;
+     position: absolute;  
+     z-index: 1;     
+ }
+
+
+ .slider-button{
+     position: absolute;
+     display: inline-block;
+     cursor: pointer;
+     padding: 20px 40px;
+     text-align: center;
+     background-color:#1abc9c;
+     opacity: 0.651;
+     border: none;
+     top: 227px;
+     font-size: 60px;
+     font-family: "Pe-icon-7-stroke";
+     color: rgb(255, 255, 255);   
+     top: 42%;
+     z-index: 2;
+ }
+
+ .slider-button:hover
+{
+    opacity: 1;
+}
+
+.slider-button-prev{
+    right: 200px;
+}
+
+.slider-button-next{
+    left: 200px;
+}
+
+ 
+
+/* section with cards */
+
+.cards-title{
+    font-weight: 900;
+    font-size: 48px;
+    color: rgba(81, 81, 81, 255);
+    text-align: center;
+    padding: 101px 0 82px 0;
+}
+
+.cards-title::after{
+    display: block;                  
+    width:164px;  
+    content: '';                    
+    border-bottom: 7px solid rgb(26, 188, 156);
+    padding-top: 32px;
+    margin: 0 auto;
+}
+
+.cards{
+    padding-bottom:100px;
+    background-color: #e9f0fd;
+    width: 1440px;
+}
+.card-overlay{
+    width: 255px;
+    height: 322px;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255,0);
+    border-style: solid;
+    background-color: rgba(0, 0, 0,0);
+    position: absolute;
+}
+
+
+.cards-list{
+    list-style: none; 
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.card-item a{
+    text-decoration: none;
+}
+
+.card-list-item:hover .card-title{
+background-color: #1abc9c;
+}
+.card-list-item:hover .card-price{
+    background-color: #7fd9c7;
+    }
+
+.card-list-item:hover .card-overlay{
+    /* opacity: 0.549; */
+    background-color: rgba(0, 0, 0,50%);
+    border-color: rgba(255, 255, 255,90%);
+    display: block;
+}
+.card-list-item:hover .card-button{
+    display: block;
+}
+.card-list-item:hover .arrow{
+    display: block;
+}
+.card-list-item:hover .like{
+    display: block;
+}
+.card-list-item:hover .time{
+    display: block;
+}
+    
+    
+.card-list-item{
+    width: 255px;
+    float: left;
+    margin-right: 30px;
+    display: block;
+    
+}
+
+.card-list-item:nth-child(4n){
+    margin-right: 0px;
+}
+
+.card-title{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color:  rgb(50, 50, 50);
+    padding: 10px 30px 10px 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card-price{
+    float: right;
+    padding: 12px;
+    background-color: #8c8c8c;
+    font-size: 18px;  
+    width: 55px;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+}
+.card-img{
+  float: left;
+}
+
+.like{
+    border-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    width: 52px;
+    height: 52px;
+    padding: 15px 13px;
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    cursor: pointer;
+    display: none;
+}
+.like:hover{
+    background-color: #1abc9c;
+}
+.arrow{
+    border-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    width: 52px;
+    height: 52px;
+    padding: 15px 13px;
+    position: absolute;
+    left: 94px;
+    top: 80px;
+    cursor: pointer;
+    display: none;
+}
+.arrow:hover{
+    background-color: #1abc9c;
+}
+.time{
+    border-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    width: 52px;
+    height: 52px;
+    padding: 14px 13px;
+    position: absolute;
+    left:158px;
+    top: 80px;
+    cursor: pointer;
+    display: none;
+}
+.time:hover{
+    background-color: #1abc9c;
+}
+.card-button{
+    position: absolute;
+    left: 30px;
+    top: 140px;
+    z-index: 5;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgba(50, 50, 50, 0%);
+    cursor: pointer; 
+    padding: 11px 17px 13px 21px;
+    display: none;
+}
+
+.card-button:hover{
+    background-color: rgb(50, 50, 50);
+}
+.card-button img{
+    margin-right: 13px;
+    vertical-align: middle
+}
+
+
+/* footer */
+.footer{
+    background-color: #323232;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'OpenSans', sans-serif;
+    color: #ffffff;
+}
+.footer p{
+    padding: 35px 0;
+}
+
+.color-text{
+    color: #45b8a3;
+}
