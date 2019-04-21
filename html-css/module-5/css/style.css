@@ -41,6 +41,7 @@ body{
     text-transform: uppercase;
     color: black;
     font-size: 14px;
+    display: block;
     
 }
 
@@ -240,6 +241,10 @@ background-color: #1abc9c;
 }
 
 .like{
+    background-image: url(../img/hard.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgba(0, 0, 0,0%);
     border-color: #ffffff;
     border-width: 1px;
     border-style: solid;
@@ -256,6 +261,10 @@ background-color: #1abc9c;
     background-color: #1abc9c;
 }
 .arrow{
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgba(0, 0, 0,0%);
     border-color: #ffffff;
     border-width: 1px;
     border-style: solid;
@@ -272,6 +281,10 @@ background-color: #1abc9c;
     background-color: #1abc9c;
 }
 .time{
+    background-image: url(../img/time.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:rgba(0, 0, 0,0%);
     border-color: #ffffff;
     border-width: 1px;
     border-style: solid;
