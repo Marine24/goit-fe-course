@@ -12,8 +12,8 @@
     display: flex;
     width: 1203px;
     justify-content: space-between;
-    margin: 0 auto 113px;
-    padding-top: 21px;
+    margin: 0 auto;
+    padding: 30px 0 113px 0;
 }
 
 .menu{
@@ -237,26 +237,28 @@
     font-weight: 300;
     font-style: italic;
 }
+.img-link{
+    display: none;
 
+}
 .icons{
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 226px; 
     position: absolute;
     top: 42%;
     right: 20%;
     z-index: 3;
-    display: none;
 }
 
-.icons button{
+.icons a{
     width: 55px;
     height: 55px;
-    background-repeat: no-repeat;
-    border: none;
     background-color: #fce38a;
+    background-repeat: no-repeat;
     background-position: center;
 }
+
 .icon-f{
     background-image: url(../img/facebook.png);
 }
@@ -270,8 +272,8 @@
     background-image: url(../img/instagram.png);
 }
 
-.icons button:hover{
-    transition-property: color;
+.icons a:hover{
+    transition-property: background-color;
     background-color: #95e1d3;
     transition-duration: 200ms;
     transition-timing-function: linear;
@@ -287,29 +289,32 @@
 
 .img-member {
     position: absolute;
+    z-index: 2;
 }
   
 .team-overlay{
-    background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
+    background-image: linear-gradient(rgba(252,227,138,0) 0%, rgba(243,129,129,0) 100%);
     width: 380px;
     height: 470px;
-    z-index: 2;
-    display: none;
+    z-index: 5;
 }
-
-.img-bgr:hover .img-member{
-    transform: translate(-9px, -9px);
-}
-
 .img-bgr:hover .team-overlay{
+    transition-property: transform, background-image;
     transform: translate(-9px, -9px);
-    display: flex;
+    background-image: linear-gradient( rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+   
+}
+.img-bgr:hover .img-member{
+    transition-property: transform;
+    transform: translate(-9px, -9px);
+    transition-duration: 200ms;
+    transition-timing-function: linear;
 }
    
 .team-overlay:hover .icons{
-    display: flex;
+    display: flex;  
 }
    
 /* footer */
