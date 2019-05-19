@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/montserrat-v13-latin-regular.woff2) format('woff2');  
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/montserrat-v13-latin-800.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/roboto-slab-v8-latin-regular.woff2) format('woff2'); 
+}
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/roboto-slab-v8-latin-700.woff2) format('woff2');
+ }
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+.navigation{
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 44px 0 120px 0;
+}
+ .menu{
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     width: 480px;
+ }
+
+ .menu-item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #767676;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #222222;
+ }
+ 
+.menu-item a:hover{
+     color: #fed136;
+ }
+
+ /* section services */
+
+.services{
+    padding-bottom: 120px;
+}
+
+.services-menu{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    padding-bottom: 19px;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+.subtitle{
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+    padding-bottom: 96px; 
+}
+
+.service-title{
+    padding: 42px 0 18px 0;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    padding-bottom: 18px;
+    color: #222222;
+}
+
+.service-text{
+    width: 274px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.5;
+}
+
+.service-item:before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    padding: 25px 32px;
+    background-repeat: no-repeat;
+    background-image: url(../img/Icon-Basket.png);
+    border: 3px solid #fed136;
+    border-radius: 80%;
+    background-position: center;
+}
+.two::before{
+    background-image: url(../img/Icon-Laptop.png);
+}
+.three::before{
+    background-image: url(../img/Icon-Locked.png);
+}
+
+.service-item{
+    text-align: center;
+}
+
+/* contact section */
+.contact{
+    background-color: #222222;
+    position: relative;
+    width: 100%;
+}
+
+.contact-image{
+    position: absolute;
+    left: 830px;
+    top: 100px;
+    width: 614px;
+    height: 537px;
+}
+
+.contact-form{
+    width: 944px;
+    margin: 0 auto;
+    padding-bottom: 115px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+   padding-bottom: 30px;
+}
+
+.form-data{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 210px;
+}
+
+.contact-title{
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    padding: 50px 0 23px 0;
+}
+.contact-subtitle{
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 16px;
+    color: #656565; 
+    padding-bottom: 76px;
+}  
+
+.form-button{
+    height: 66px;
+    width: 240px;
+    background-color: #fed136;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    display: block;
+    margin: 0 auto; 
+}
+
+.form-data input{
+    height: 54px;
+    width: 455px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    padding-left: 20px;
+}
+
+input::placeholder{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+}
+
+textarea{
+    resize: none;
+    width: 455px;
+    height: 210px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 14px;  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+}
