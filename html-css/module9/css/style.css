@@ -1,0 +1,121 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.intro{
+    background-image: url(../img/Vector\ Smart\ Objec.png);
+    background-repeat: no-repeat;
+    background-color: rgb(26, 25, 21);
+    background-size: cover;
+    margin-bottom: 68px;
+    /* width: 320px; */
+}
+.buttons{
+    padding: 30px 0 130px 0;
+}
+.but-nav{
+    border: none;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 14px;
+    color:#ffffff;
+    cursor:pointer;
+    padding: 10px 20px;
+}
+    
+.but-nav:hover{
+    border: 2px solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+}
+    
+.subtitle-intro{
+    font-family: "Montserrat", sans-serif;
+     font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 38px; 
+}
+    
+.title-intro{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 19px;
+    text-transform: uppercase;
+}
+    
+    .subtitle1-intro{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        padding-bottom: 19px;
+        width: 217px;
+        margin: 0 auto;  
+    }
+    
+    .but-intro{
+        background-color: #ff4e50;
+        border: none;
+        border-radius: 20px;
+        width: 280px;
+        height: 40px;
+        color: #fff;
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        font-size: 14px;
+        cursor:pointer;
+    }
+    
+    .but-int{
+        padding-bottom: 140px;
+        width: 280px;
+        margin: 0 auto;
+    }
+    @media (max-width: 747px){
+        .buttons{
+            padding: 0;
+        }
+    }
