@@ -149,9 +149,9 @@
          -o-transition-timing-function: linear;
             transition-timing-function: linear;
 }
-.intro{
+.header{
     text-align: center;
-    height: 100vh;
+    min-height: 1191px;
     background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(243,129,129,0.8)), to(rgba(252,227,138,0.8))), url('../img/Layer15@1X.png');
     background-image: -webkit-linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@1X.png');
     background-image: -o-linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@1X.png');
@@ -160,24 +160,25 @@
     background-size: cover;
     
 }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
-  .intro {
-    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(243,129,129,0.8)), to(rgba(252,227,138,0.8))), url('../img/Layer15@2X.png');
-    background-image: -webkit-linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@2X.png');
-    background-image: -o-linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@2X.png');
-    background-image: linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@2X.png');
-    background-repeat: no-repeat;
-}
-}
 
-.intro__subtitle{
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .header {
+      background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(243,129,129,0.8)), to(rgba(252,227,138,0.8))), url('../img/Layer15@2X.png');
+      background-image: -webkit-linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@2X.png');
+      background-image: -o-linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@2X.png');
+      background-image: linear-gradient( rgba(243,129,129,0.8)0%, rgba(252,227,138,0.8) 100%), url('../img/Layer15@2X.png');
+      background-repeat: no-repeat;
+  }
+  }
+
+.header__subtitle{
     font-family: 'KaushanScript', cursive;
     font-size: 72px;
     color: #ffffff;
     margin-bottom: 42px;
 }
 
-.intro__title{
+.header__title{
     font-family: 'Montserrat', sans-serif;
     font-size: 150px;
     text-transform: uppercase;
@@ -188,7 +189,7 @@
     margin-bottom: 124px;
 }
 
-.btn-intro{
+.header-button{
     border: 2px solid #ffffff;
     padding: 14px 32px;
     background-color: transparent;
@@ -199,11 +200,11 @@
     cursor: pointer;
 }
 
-.icon{
+.header-icon{
     padding-top: 15px;  
 }
   
-.intro-icons{
+.header-icons{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
