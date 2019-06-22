@@ -1,0 +1,35 @@
+.menu{
+    list-style:none;
+    width: 496px;
+    @include flex('two');
+    &__item{
+        text-transform: uppercase;
+        font-size: $font-size-text;
+    }
+    &__link{
+    text-decoration: none;  
+    color: $header-color;
+    font-family: $font-title-text;
+    font-weight: 500;
+    padding-bottom: 10px;
+    
+    &:hover{
+        -webkit-transition-property: color,border;
+        -o-transition-property: color,border;
+        transition-property: color,border;
+        border-bottom: 3px solid #fce38a;
+        color: #fce38a;
+        -webkit-transition-duration: 200ms;
+             -o-transition-duration: 200ms;
+                transition-duration: 200ms;
+        -webkit-transition-timing-function: linear;
+             -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+    }
+    }
+    &__icons{
+    @include flex('two');
+        width: 690px;
+    }
+
+}
