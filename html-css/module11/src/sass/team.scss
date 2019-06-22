@@ -1,0 +1,122 @@
+.team{
+    @include flex('three');
+    margin: 0px auto 82px;
+    width: 1200px;  
+
+    &__list{
+    @include flex('two');
+    list-style: none;
+    }
+
+    &__background{
+        background-color: rgb(149, 225, 211);
+        width: 380px;
+        height: 470px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative; 
+        &:hover .team__overlay{
+            -webkit-transition-property: background-image, -webkit-transform;
+            transition-property: background-image, -webkit-transform;
+            -o-transition-property: transform, background-image;
+            transition-property: transform, background-image;
+            transition-property: transform, background-image, -webkit-transform;
+            -webkit-transform: translate(-9px, -9px);
+                -ms-transform: translate(-9px, -9px);
+                    transform: translate(-9px, -9px);
+            background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(252,227,138,0.8)), to(rgba(243,129,129,0.8)));
+            background-image: -webkit-linear-gradient( rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
+            background-image: -o-linear-gradient( rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
+            background-image: linear-gradient( rgba(252,227,138,0.8) 0%, rgba(243,129,129,0.8) 100%);
+            -webkit-transition-duration: 200ms;
+                 -o-transition-duration: 200ms;
+                    transition-duration: 200ms;
+            -webkit-transition-timing-function: linear;
+                 -o-transition-timing-function: linear;
+                    transition-timing-function: linear;
+           
+        }  
+        &:hover .team__member{
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            -o-transition-property: transform;
+            transition-property: transform;
+            transition-property: transform, -webkit-transform;
+            -webkit-transform: translate(-9px, -9px);
+                -ms-transform: translate(-9px, -9px);
+                    transform: translate(-9px, -9px);
+            -webkit-transition-duration: 200ms;
+                 -o-transition-duration: 200ms;
+                    transition-duration: 200ms;
+            -webkit-transition-timing-function: linear;
+                 -o-transition-timing-function: linear;
+                    transition-timing-function: linear;
+        }
+    }
+    &__member {
+        position: absolute;
+        z-index: 2;
+    }
+
+    &__overlay{
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(252,227,138,0)), to(rgba(243,129,129,0)));
+        background-image: -webkit-linear-gradient(rgba(252,227,138,0) 0%, rgba(243,129,129,0) 100%);
+        background-image: -o-linear-gradient(rgba(252,227,138,0) 0%, rgba(243,129,129,0) 100%);
+        background-image: linear-gradient(rgba(252,227,138,0) 0%, rgba(243,129,129,0) 100%);
+        width: 380px;
+        height: 470px;
+        z-index: 5;
+        &:hover .team__icons{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;  
+        }
+    }
+    &__icons{
+        display: none;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 226px; 
+        position: absolute;
+        top: 42%;
+        right: 20%;
+        z-index: 3;
+    }
+    &__icon-link{
+        width: 56px;
+        height: 56px;
+        background-color: $icon-background-color;
+        &:hover .team__icon-img{
+            fill: $header-color;
+        }
+        &:hover{
+            -webkit-transition-property: background-color;
+            -o-transition-property: background-color;
+            transition-property: background-color;
+            background-color: $icon-hover-color;
+            -webkit-transition-duration: 200ms;
+                 -o-transition-duration: 200ms;
+                    transition-duration: 200ms;
+            -webkit-transition-timing-function: linear;
+                 -o-transition-timing-function: linear;
+                    transition-timing-function: linear;
+        }
+    }
+    &__icon-img{
+        fill: $icon-hover-color;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        -webkit-transform: translateX(15px)translateY(15px);
+            -ms-transform: translateX(15px)translateY(15px);
+                transform: translateX(15px)translateY(15px);    
+        }
+}
+
+
+
+
+  

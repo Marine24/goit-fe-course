@@ -1,0 +1,58 @@
+.footer{
+    margin: 0 auto 12px;
+
+    &::before{
+        display: flex;
+        @include pseudo();
+        width: 1200px;
+        border-bottom: 1px solid $text-color;
+        margin: 0 auto;  
+    } 
+    
+    &__content{
+        margin: 0 auto;
+        width: 1200px;
+        @include flex('five');
+    }
+    &__text{
+        color: $section-title-text-color;
+        font-size: $font-size-text;
+        padding-top: 30px;
+        font-family: $font-title-text;  
+    }   
+    &__text--color{
+        color: $after-color;
+        text-decoration: none;
+        font-family: $font-title-text; 
+        font-size: $font-size-text; 
+    }
+}
+
+
+.form-label{
+    width: 230px;
+    height: 60px;
+    font-style: italic;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(231, 231, 231);
+    padding: 0 0 0 13px;
+}
+
+.form-btn{
+    padding: 6px 34px;
+    background-color: $background-card-color;
+    border: none;
+    color: $header-color;
+    font-size: $font-size-text;
+    font-family: $font-title-text; 
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer-form{
+    display: flex;
+    padding-top: 10px;
+}

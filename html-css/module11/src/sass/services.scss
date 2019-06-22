@@ -1,0 +1,27 @@
+.services{
+    @include flex('one');
+    margin: 0px auto 92px;
+    width: 1200px;
+
+    &__list{
+        @include flex('four');
+        margin-top: 66px;
+        list-style: none;
+    }
+    &__item{
+        width: 293px;
+        padding-bottom: 99px; 
+        position: relative;
+        &:nth-child(n+4){
+            padding-bottom: 0;
+        }
+    }
+
+}
+$icons: foto, design, creativ, seo, css, digital;
+
+@include pseudo-icons(
+    'services__icon-', 
+    $icons, 
+    '../images/', 
+    'svg');
