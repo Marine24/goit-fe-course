@@ -4,6 +4,9 @@
 main{
     padding-bottom: 30px;
 }
+body{
+    margin: 0;
+}
 .person{
     width: 240px;
     margin: 0 auto;
